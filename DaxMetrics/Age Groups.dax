@@ -1,0 +1,5 @@
+"Age Groups = 
+ IF('Loan_default'[Age]<=19,""Teen"",
+    IF('Loan_default'[Age]<=39,""Adults"",
+        IF('Loan_default'[Age]<=59,""Middle Age Adults"",
+        ""Senior Citizens"")))"

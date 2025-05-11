@@ -1,0 +1,2 @@
+"Average Income by Employment type = 
+ CALCULATE(AVERAGE('Loan_default'[Income]),ALLEXCEPT('Loan_default','Loan_default'[EmploymentType]))"

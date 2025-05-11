@@ -1,0 +1,6 @@
+"Income Bracket = 
+ SWITCH(
+    TRUE(),
+    'Loan_default'[Income]<30000,""Low Income"",
+    'Loan_default'[Income]>=30000 && 'Loan_default'[Income]<60000,""Medium Income"",
+    'Loan_default'[Income]>=60000, ""High Income"")"

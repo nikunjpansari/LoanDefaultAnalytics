@@ -1,0 +1,2 @@
+"Median by Credit score bins = 
+MEDIANX('Loan_default','Loan_default'[LoanAmount])"

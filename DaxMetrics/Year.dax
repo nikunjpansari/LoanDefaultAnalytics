@@ -1,0 +1,1 @@
+Year = YEAR('Loan_default'[Loan_Date_DD_MM_YYYY].[Date]) 

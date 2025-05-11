@@ -1,0 +1,2 @@
+"Total Loan (Middle Age Adults) = 
+ SUMX(FILTER('Loan_default','Loan_default'[Age Groups]=""Middle Age Adults""),'Loan_default'[LoanAmount])"

@@ -1,0 +1,2 @@
+"Loan Amount by Purpose = 
+ SUMX(FILTER('Loan_default',NOT(ISBLANK('Loan_default'[LoanAmount]))),'Loan_default'[LoanAmount])"

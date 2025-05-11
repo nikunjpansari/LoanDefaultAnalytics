@@ -1,0 +1,2 @@
+"Total Loan (Credit Bins) = 
+ CALCULATE(SUM('Loan_default'[LoanAmount]),'Loan_default'[Age Groups]=""Adults"",ALLEXCEPT('Loan_default','Loan_default'[Age],'Loan_default'[Age Groups],'Loan_default'[CreditScore],'Loan_default'[Credit Score Bins]))"

@@ -1,0 +1,2 @@
+"Average Loan Amt (High Credit) = 
+ AVERAGEX(FILTER('Loan_default','Loan_default'[Credit Score Bins]=""High""),'Loan_default'[LoanAmount])"

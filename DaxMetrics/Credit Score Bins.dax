@@ -1,0 +1,4 @@
+"Credit Score Bins = 
+ IF(Loan_default[CreditScore]<=400,""Very Low"",
+    IF('Loan_default'[CreditScore]<=450,""Low"",
+        IF('Loan_default'[CreditScore]<=650,""Medium"",""High"")))"

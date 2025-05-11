@@ -1,0 +1,8 @@
+"Default Rate by Year = 
+ Var totalloans = 
+                CALCULATE(COUNTROWS('Loan_default'),ALLEXCEPT('Loan_default',Loan_default[Year]))
+
+Var default = CALCULATE(COUNTROWS(FILTER('Loan_default','Loan_default'[Default]=TRUE())),ALLEXCEPT('Loan_default',Loan_default[Year]))
+
+RETURN
+DIVIDE(default,totalloans)*100"

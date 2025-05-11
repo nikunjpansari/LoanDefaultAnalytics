@@ -1,0 +1,6 @@
+Default Rate by Employment type = 
+ Var totalrecords = COUNTROWS(ALL('Loan_default'))
+ Var DefaultCases = COUNTROWS(FILTER('Loan_default','Loan_default'[Default]=TRUE()))
+
+ RETURN
+ CALCULATE(DIVIDE(DefaultCases,totalrecords),ALLEXCEPT('Loan_default','Loan_default'[EmploymentType])) *100

@@ -1,0 +1,6 @@
+"YOY Loan Amount Change = 
+DIVIDE(
+    CALCULATE(SUM('Loan_default'[LoanAmount]),'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY]))) - 
+    CALCULATE(SUM('Loan_default'[LoanAmount]),'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY]))-1)
+
+    , CALCULATE(SUM('Loan_default'[LoanAmount]),'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY]))-1),0) * 100"

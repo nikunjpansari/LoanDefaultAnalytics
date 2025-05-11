@@ -1,0 +1,3 @@
+Average Loan by Age Group = 
+ AVERAGEX(VALUES('Loan_default'[Age Groups]),
+ AVERAGE('Loan_default'[LoanAmount]))

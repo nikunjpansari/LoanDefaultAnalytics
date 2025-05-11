@@ -1,0 +1,2 @@
+"Loans by Education type = 
+ COUNTROWS(FILTER('Loan_default',NOT(ISBLANK('Loan_default'[LoanID]))))"
